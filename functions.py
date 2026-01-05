@@ -382,12 +382,6 @@ def plot_ks_statistic(
             marker="o",
             label=f"{name} - Responders",
         )
-        plt.plot(
-            x_values,
-            np.append(0, dt["cumulative_non_responders_percentage"].values),
-            marker="o",
-            label=f"{name} - Non-Responders",
-        )
 
         ks_value = dt["ks_statistic"].max()
         ks_segment = dt.loc[dt["ks_statistic"] == ks_value, "segment"].values[0]
@@ -400,8 +394,15 @@ def plot_ks_statistic(
             ],
             "g--",
             marker="o",
-            label=f"{name} KS: {ks_value} at segment {ks_segment}",
+            label=f"{name} KS: {ks_value} (Seg. {ks_segment})",
         )
+    
+    plt.plot(
+        x_values,
+        np.append(0, dt["cumulative_non_responders_percentage"].values),
+        marker="o",
+        label=f"Non-Responders",
+    )
 
     plt.title(title, fontsize=title_fontsize)
     plt.xlabel("Population (%)", fontsize=text_fontsize)
