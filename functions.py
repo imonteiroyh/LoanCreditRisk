@@ -495,7 +495,3 @@ def default_report(
     )
 
     return st
-
-
-# Backwards compatibility
-report = performance_report
