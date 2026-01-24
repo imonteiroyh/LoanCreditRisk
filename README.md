@@ -1,4 +1,4 @@
-# LoanCreditRisk — Narrative Report
+# LoanCreditRisk
 
 This project asks a blunt question: if we had to overhaul a consumer lending stack today using only the LendingClub public book, what truly moves default risk, how far can lightweight models push discriminatory power out-of-time, and what policy shifts would actually change business outcomes? The work centers on 36‑month loans issued before mid-2017 (about 1.06M records, 14.6% default after censoring to resolved statuses), treating default vs fully paid as the target and stripping away unfinished loans to avoid naïve underreporting of risk.
 
