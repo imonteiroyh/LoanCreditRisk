@@ -10,3 +10,4 @@ git+https://github.com/BlackArbsCEO/Boruta-Shap.git
 feature-engine==1.9.3
 shap==0.46.0
 venn-abers==1.4.6
+mapie==1.2.0
