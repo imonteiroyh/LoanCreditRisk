@@ -19,3 +19,6 @@ Selection bias looms large: outcomes reflect historic approvals and prices, not 
 
 ## Where to push next
 Three tracks unlock the most value quickly. **Coverage and features:** extend to 60‑month and post-2017 vintages with proper censoring; add richer engineered ratios/interactions, better text embeddings, and a v2 that explicitly tracks potentially unstable characteristics with monitoring hooks. **Productization and experimentation:** move notebooks into scripts/CLI (data prep → feature store → training → scoring), wire MLflow for hyperparameter sweeps and registries, and start logging “first 2–3 payments” as early warning signals. **Causal leverage:** design lightweight A/B or Bayesian sequential tests in mid-bands to isolate pricing and limit effects; treat payment-burden elasticity as an explicit assumption until randomized data arrives. In parallel, deploy the current XGB score in shadow alongside the grade policy, recalibrating monthly with recent vintages and watching PSI/stability on the selected features.
+
+## Credits
+This project uses the public LendingClub loan dataset, made available by [LendingClub](https://www.lendingclub.com/) through its public data releases. The data is used strictly for research and educational purposes, and LendingClub is not affiliated with or responsible for the analyses and conclusions presented here.
